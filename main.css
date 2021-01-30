@@ -16,7 +16,7 @@ ul {
   margin: 0;
 }
 
-.results {
+.autocomplete_results_ul {
   border: 1px solid #ccc;
   border-top: 0;
   width: 100%;
@@ -25,12 +25,29 @@ ul {
   overflow-y: scroll;
 }
 
-.result {
-  padding: 5px;
+.autocomplete_results_ul {
   cursor: pointer;
 }
-.result:hover {
+.autocomplete_results_ul li {
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+}
+.autocomplete_results_ul li:last-child {
+  border: 0;
+}
+.autocomplete_results_ul li.active {
   background-color: #eee;
+}
+
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  display: flex;
+}
+
+.col-6 {
+  width: 50%;
+  display: flex;
 }
 
 form {
